@@ -75,21 +75,51 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Memes\child.jpg" />
-    <Content Include="Memes\chooseyourclass.jpg" />
-    <Content Include="Memes\floor.png" />
-    <Content Include="Memes\legonsfw.png" />
-    <Content Include="Memes\meme1.jpg" />
-    <Content Include="Memes\meme2.jpg" />
-    <Content Include="Memes\meme3.jpg" />
-    <Content Include="Memes\meme4.jpg" />
-    <Content Include="Memes\meme5.jpg" />
-    <Content Include="Memes\meme6.jpg" />
-    <Content Include="Memes\meme7.jpg" />
-    <Content Include="Memes\racist.jpg" />
-    <Content Include="Memes\rust.jpg" />
-    <Content Include="Memes\skinner.jpg" />
-    <Content Include="Memes\uber.jpg" />
+    <Content Include="Memes\child.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Memes\chooseyourclass.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Memes\floor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Memes\legonsfw.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Memes\meme1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Memes\meme2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Memes\meme3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Memes\meme4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Memes\meme5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Memes\meme6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Memes\meme7.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Memes\racist.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Memes\rust.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Memes\skinner.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Memes\uber.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
