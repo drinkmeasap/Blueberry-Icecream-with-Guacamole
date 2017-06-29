@@ -73,7 +73,17 @@ namespace Blueberry_Icecream_with_Guacamole
             commands.CreateCommand("help")
                 .Do(async (e) =>
                 {
-                    await e.Channel.SendMessage("Available commands: \n <hi \n <sound \n <info \n <meme \n <clear ");
+                    await e.Channel.SendMessage("Available commands: \n <hi \n <sound \n <info \n <meme \n <clear \n <roll or <ttsroll \n <gas \n <suicide \n if you are blind you can do <ttshelp");
+                });
+            #endregion
+
+
+            #region Help
+            commands.CreateCommand("ttshelp")
+                .Do(async (e) =>
+                {
+                    await e.Channel.SendTTSMessage("Available commands: ");
+                    await e.Channel.SendTTSMessage("\n hi \n sound \n info \n meme \n clear \n roll or ttsroll \n gas \n suicide");
                 });
             #endregion
 
@@ -102,7 +112,7 @@ namespace Blueberry_Icecream_with_Guacamole
                 });
             #endregion
 
-            #region Name
+            #region gas
             commands.CreateCommand("gas")
                 .Do(async (e) =>
                 {
@@ -118,8 +128,25 @@ namespace Blueberry_Icecream_with_Guacamole
                 });
             #endregion
 
+            #region roll
+            commands.CreateCommand("roll")
+                .Do(async (e) =>
+                {
+                    int rollnumber = rand.Next(0, 100);
+                    
+                    await e.Channel.SendMessage("You rolled " + rollnumber + "!");
+                });
+            #endregion
 
+            #region roll
+            commands.CreateCommand("ttsroll")
+                .Do(async (e) =>
+                {
+                    int rollnumber = rand.Next(0, 100);
 
+                    await e.Channel.SendTTSMessage("You rolled " + rollnumber + "!");
+                });
+            #endregion
 
             #region MemeGenerator
             commands.CreateCommand("meme")
@@ -136,7 +163,7 @@ namespace Blueberry_Icecream_with_Guacamole
                 .Do(async (e) =>
                 {
                     Message[] messagesToClear;
-                    messagesToClear = await e.Channel.DownloadMessages(70);
+                    messagesToClear = await e.Channel.DownloadMessages(50);
                     await e.Channel.DeleteMessages(messagesToClear);
                 });
             #endregion
