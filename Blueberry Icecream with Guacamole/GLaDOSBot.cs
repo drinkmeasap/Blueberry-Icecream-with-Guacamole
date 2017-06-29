@@ -189,7 +189,7 @@ namespace Blueberry_Icecream_with_Guacamole
 
             discord.ExecuteAndWait(async () =>
             {                      //Token doesn't work there is no point in trying to use it OK?
-                await discord.Connect("MzI5NTQxMjE4OTA2Mjc1ODQy.DDZv6Q.a-w_8RFNUPTC3N72Y6y_DzvWqZY", TokenType.Bot);
+                await discord.Connect("Token has been removed from here so nobody looking at github will be able to access it, send shits in our channels. Don't bother looking through history cuz we generated a new one already :)", TokenType.Bot);
             });
         }
 
